@@ -1,0 +1,45 @@
+
+/* Here are the general styles */
+
+:root {
+    --main-color: #fefae0;
+    --secondary-color: #283618;
+    --third-color: #fff;
+    --transition: transform .2s, min-width .2s, background-color .1s;
+    --box-shadow: 10px 5px 10px 3px #0004;
+    --box-shadow-down: 0 10px 10px 3px #0007;
+    --hover-button: #bdbaa5;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: var(--main-color);
+    font-family: "Montserrat", sans-serif;
+    padding-top: 0.1px;
+}
+
+main {
+    margin-top: 100px;
+}
+
+h2 {
+    margin-left: 1em;
+    color: var(--secondary-color);
+}
+
+img {
+    max-width: 100%;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}

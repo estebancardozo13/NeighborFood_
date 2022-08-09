@@ -1,0 +1,66 @@
+body{
+    position: relative;
+    min-height: 100vh
+}
+
+.toggle-menu{
+    position: absolute;
+    right: 1em;
+}
+
+.back{
+    position: absolute;
+    left: 1em;
+    color: var(--main-color);
+    font-size: 1.5rem;
+}
+
+.back__text{
+    display: none;
+}
+
+@media screen and (min-width:768px) {
+    .back__text{
+        display: initial;
+    }
+}
+
+.logo{
+    display: initial;
+    margin-left: auto;
+}
+
+.button--header{
+    display: none;
+}
+
+/* Main */
+
+.image{
+    display: none;
+}
+
+.register{
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 1em;
+    background-color: var(--third-color);
+    border-radius: 1em;
+    -webkit-border-radius: 1em;
+    -moz-border-radius: 1em;
+    -ms-border-radius: 1em;
+    -o-border-radius: 1em;
+}
+
+/* Footer */
+
+.footer{
+    position: absolutes;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer__group-two{
+    text-align: center;
+}

@@ -1,0 +1,69 @@
+/* Here are the footer styles */
+.footer {
+    position: relative;
+    padding: 1em 0;
+    text-align: center;
+    background-color: var(--secondary-color);
+    color: var(--main-color);
+}
+
+@media screen and (min-width: 768px) {
+    .footer__group-one {
+        position: relative;
+        width: 100%;
+        height: 200px;
+    }
+}
+
+.footer__logo {
+    display: none;
+}
+
+@media screen and (min-width: 768px) {
+    .footer__logo {
+        position: absolute;
+        bottom: 30px;
+        left: 20px;
+        width: 400px;
+        display: inline-block;
+        /* Cambiar por el logo que es */
+        filter: invert() brightness(100%) saturate(0);
+        -webkit-filter: invert() brightness(100%) saturate(0);
+    }
+}
+
+.footer__about-us {
+    display: inline-block;
+    width: 50%;
+    text-align: left;
+    text-decoration: underline;
+}
+
+@media screen and (min-width: 768px) {
+    .social-icons__list--footer {
+        position: absolute;
+        top: 0;
+        right: 10px;
+        margin: 0;
+        width: max-content;
+    }
+
+    .footer__about-us {
+        position: absolute;
+        width: max-content;
+        right: 130px;
+        top: 0;
+    }
+
+    .select-language--footer {
+        position: absolute;
+        width: 200px;
+        bottom: 30px;
+        right: 10px;
+    }
+
+    .footer__group-two {
+        padding-left: 1em;
+        text-align: left;
+    }
+}
