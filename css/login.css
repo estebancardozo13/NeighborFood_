@@ -1,6 +1,7 @@
 body{
     position: relative;
-    min-height: 100vh
+    min-height: 100vh;
+    border: 0.1px solid;
 }
 
 .toggle-menu{
@@ -51,7 +52,7 @@ body{
 @media screen and (min-width:1024px) {
     .bogota-map__container{
         display: block;
-        width: 50%;
+        width: 40%;
         height: auto;
         margin-left: auto;
         margin-right: auto;
@@ -61,8 +62,7 @@ body{
 
 .login{
     width: 90%;
-    margin-right: auto;
-    margin-left: auto;
+    margin: 0 auto 60px;
     padding: 2em 1em;
     text-align: center;
     background-color: var(--third-color);
@@ -79,6 +79,13 @@ body{
         max-width: 600px;
     }
 }
+
+@media screen and (min-width:1024px) {
+    .login{
+        width: 40%;
+    }
+}
+
 
 .login__title{
     color: var(--secondary-color);

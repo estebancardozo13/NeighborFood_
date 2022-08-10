@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- Slider -->
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css"
+        />
+
+        <!-- Icon -->
+        <link rel="icon" href="assets/img/icon.webp" />
+        <!-- Icons -->
+        <link rel="icon" href="assets/img/icon.webp" />
+        <!-- Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700&display=swap"
+            rel="stylesheet"
+        />
+        <!-- Styles -->
+        <link rel="stylesheet" href="../css/normalize.css" />
+        <link rel="stylesheet" href="../css/styles.css" />
+        <link rel="stylesheet" href="../css/header.css" />
+        <link rel="stylesheet" href="../css/footer.css" />
+        <link rel="stylesheet" href="../css/product.css" />
+        <title>NombreRestaurante</title>
+    </head>
+    <body>
+        <header class="header">
+            <div id="toggle-menu" class="toggle-menu">
+                <i class="toggle-menu__icon fa-solid fa-bars"></i>
+            </div>
+            <div class="back">
+                <a href="../index.html">
+                    <i class="fa-solid fa-caret-left"></i>
+                    <span class="back__text">Volver</span>
+                </a>
+            </div>
+            <a href="../index.html" class="logo">
+                <picture>
+                    <source
+                        media="(min-width: 768px)"
+                        srcset="../assets/img/logo/logo-nf-completo.webp"
+                    />
+                    <source srcset="../assets/img/logo/logo-nf-small.webp" />
+                    <img
+                        src="../assets/img/logo/logo-nf-small.webp"
+                        alt="Logo NeighborFood"
+                    />
+                </picture>
+            </a>
+            <a href="../html/register.html" class="button button--header"
+                >Registrate</a
+            >
+            <aside id="main-menu" class="main-menu">
+                <div class="main-menu__header">
+                    <a href="../index.html">
+                        <img
+                            class="main-menu__logo"
+                            src="../assets/img/logo/logo-nf-completo.webp"
+                            alt="Logo"
+                        />
+                    </a>
+                    <i
+                        id="main-menu__close"
+                        class="main-menu__close fa-regular fa-circle-xmark"
+                    ></i>
+                </div>
+                <div class="button-container">
+                    <a href="" class="button">Iniciar Sesión</a>
+                    <a href="../html/register.html" class="button">Registrate</a>
+                </div>
+                <div class="main-menu__search-container">
+                    <form class="search">
+                        <input
+                            class="search__input"
+                            type="text"
+                            required=""
+                            placeholder="¿Que estas buscando?"
+                            id="search-menu"
+                        />
+                        <i class="fa-solid fa-magnifying-glass search__icon"></i>
+                    </form>
+                </div>
+                <nav class="section-nav">
+                    <p class="section-nav__title">Secciones</p>
+                    <ul>
+                        <li class="section-nav__item">
+                            <a href="#">Cerca de tí</a>
+                        </li>
+                        <li class="section-nav__item">
+                            <a href="#">Explorar Mapa</a>
+                        </li>
+                        <li class="section-nav__item">
+                            <a href="#">Categorias</a>
+                        </li>
+                        <li class="section-nav__item">
+                            <a href="#">Promociones</a>
+                        </li>
+                        <li class="section-nav__item">
+                            <a href="#">Comidas</a>
+                        </li>
+                        <li class="section-nav__item">
+                            <a href="#">Tematicas</a>
+                        </li>
+                    </ul>
+                </nav>
+                <nav class="section-nav">
+                    <p class="section-nav__title">Otros</p>
+                    <ul>
+                        <li class="section-nav__item">
+                            <a href="../html/register.html"
+                                >Registrate como usuario</a
+                            >
+                        </li>
+                        <li class="section-nav__item">
+                            <a href="../html/register.html"
+                                >Registra tu restaurante</a
+                            >
+                        </li>
+                    </ul>
+                </nav>
+                <nav class="main-menu__social">
+                    <ul class="social-icons__list">
+                        <li class="social-icons__item">
+                            <a
+                                href="https://facebook.com"
+                                class="fa-brands fa-facebook"
+                                target="_blank"
+                            ></a>
+                        </li>
+                        <li class="social-icons__item">
+                            <a
+                                href="https://instagram.com"
+                                class="fa-brands fa-instagram"
+                                target="_blank"
+                            ></a>
+                        </li>
+                        <li class="social-icons__item">
+                            <a
+                                href="https://twitter.com"
+                                class="fa-brands fa-twitter"
+                                target="_blank"
+                            ></a>
+                        </li>
+                    </ul>
+                    <select name="language" id="language" class="select-language">
+                        <option value="es">Español</option>
+                        <option value="en">English</option>
+                    </select>
+                </nav>
+                <div class="main-menu__footer">
+                    <small
+                        >&copy; 2022 <b>NeighborFood</b> - Todos los derechos
+                        reservados</small
+                    >
+                </div>
+            </aside>
+        </header>
+        <main>
+            <article class="restaurant-card">
+                <img
+                    src="../assets/img/restaurants-nearby/Taqueria.webp"
+                    alt="Taqueria"
+                    class="restaurant-card__image"
+                />
+                <section class="information">
+                    <h1 class="information__title">Taqueria don clemente</h1>
+                    <p class="information__address">
+                        <i class="fa-solid fa-location-dot"></i> Cra. 11 #79-6:
+                        <a
+                            href="https://www.google.com/maps/place/Taquer%C3%ADa+Don+Clemente/@4.6635863,-74.0563867,17z/data=!3m1!4b1!4m5!3m4!1s0x8e3f9a5e2d7097fb:0xe43add7358bd747f!8m2!3d4.6635994!4d-74.0542355"
+                            target="_blank"
+                            >Ver Mapa</a
+                        >
+                    </p>
+                    <p class="information__schedule">
+                        <i class="fa-solid fa-clock"></i> Cerrado Ahora:
+                        <a href="#">Mirar Horarios</a>
+                    </p>
+                </section>
+                <section class="option__container">
+                    <a href="#" class="option">
+                        <i class="fa-solid fa-bookmark"></i>
+                        <span>Añadir a Favoritos</span>
+                    </a>
+                    <a href="#" class="option">
+                        <i class="fa-solid fa-pen"></i><span>Ver Reseñas</span>
+                    </a>
+                    <a href="#" class="option">
+                        <i class="fa-solid fa-share"></i><span>Compartir</span>
+                    </a>
+                </section>
+            </article>
+            <article class="slider__container">
+                <ul class="slider">
+                    <li>
+                        <img src="../assets/img/product/image-1.webp" alt="Restaurante">
+                    </li>
+                    <li>
+                        <img src="../assets/img/product/image-2.webp" alt="Restaurante">
+                    </li>
+                    <li>
+                        <img src="../assets/img/product/image-4.webp" alt="Restaurante">
+                    </li>
+                </ul>
+            </article>
+        </main>
+        <footer class="footer">
+            <div class="footer__group-two">
+                <small
+                    >&copy; 2022 <b>NeighborFood</b> - Todos los derechos
+                    reservados</small
+                >
+            </div>
+        </footer>
+        <!-- Scripts -->
+        <!-- Icons -->
+        <script
+            src="https://kit.fontawesome.com/36c7cc7f6f.js"
+            crossorigin="anonymous"
+        ></script>
+        <!-- slider -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+        <!-- My Scripts -->
+        <script src="../js/script.js"></script>
+        <script>
+            $(document).ready(function () {
+                $('.slider').bxSlider({
+                  auto: true,
+                  pager: false,
+                });
+              });
+        </script>
+    </body>
+</html>
