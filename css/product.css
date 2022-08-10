@@ -95,3 +95,103 @@
     box-shadow: none;
     -webkit-box-shadow:none;
 }
+
+.menu{
+    margin: 0 auto;
+    padding: 1em;
+    text-align: center;
+    /* background-color: var(--third-color); */
+    /* box-shadow: var(--box-shadow); */
+}
+
+.menu-category__title{
+    text-align: left;
+    text-transform: uppercase;
+}
+
+.product-card{
+    display: flex;
+    margin-bottom: 1.2em;
+    height: 20vh;
+    font-size: .8rem;
+    background-color: var(--third-color);
+    border-radius: .5em;
+    -webkit-border-radius: .5em;
+    -moz-border-radius: .5em;
+    -ms-border-radius: .5em;
+    -o-border-radius: .5em;
+    box-shadow: var(--box-shadow);
+    overflow: hidden;
+}
+
+.product-card__info{
+    position: relative;
+    padding-left: .8em;
+    text-align: left;
+}
+
+.product-card__title{
+    margin-left: 0;
+    margin-bottom: 0;
+    font-size: 1.2rem;
+    color: var(--secondary-color);
+}
+
+.product-card__ingredients{
+    height: 45px;
+    color: #888;
+    overflow: hidden;
+}
+
+.product-card__price{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #dda15e;
+}
+
+.review__container{
+    width: 95%;
+    margin:  0 auto 1em;
+    padding: 1em;
+    text-align: center;
+    background-color: var(--third-color);
+    border-radius: .5em ;
+    -webkit-border-radius: .5em ;
+    -moz-border-radius: .5em ;
+    -ms-border-radius: .5em ;
+    -o-border-radius: .5em ;
+    box-shadow: var(--box-shadow-down);
+}
+
+.review-card{
+    display: flex;
+    flex-direction: column;
+    padding: 0.5em;
+    border-top: 1px solid #888;
+    border-bottom: 1px solid #888;
+}
+
+.profile{
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+}
+
+.profile__name{
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--secondary-color);
+}
+
+.review-card__stars{
+    font-size: 1.2rem;
+    color: #dda15e;
+}
+
+.review-card__text{
+    font-size: 1rem;
+    color: #888;
+}
