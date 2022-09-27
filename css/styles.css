@@ -5,7 +5,7 @@
     --main-color: #fefae0;
     --secondary-color: #283618;
     --third-color: #fff;
-    --transition: transform .2s, min-width .2s, background-color .1s;
+    --transition: transform .2s, min-width .2s, background-color .1s, color .2s;
     --box-shadow: 10px 5px 10px 3px #0004;
     --box-shadow-down: 0 10px 10px 3px #0007;
     --hover-button: #bdbaa5;
